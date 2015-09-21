@@ -1,0 +1,11 @@
+
+select "sum"((document->>'_integer')::NUMERIC) from "perf_childDoc"
+	.03 seconds with 20,072 records
+select "avg"((document->>'_integer')::NUMERIC) from "perf_childDoc"
+	.03 seconds with 20,072 records
+select * from "perf_childDoc" where document->>'_date' between '1986-03-13' and '1992-03-11'
+	no index - .09 sec to return 2,660 records out of 20,072
+
+CREATE INDEX ON "perf_childDoc"((document->>'_date'));
+select * from "perf_childDoc" where document->>'_date' between '1986-03-13' and '1992-03-11'
+	indexed - .03 sec to return 2,660 records out of 20,072

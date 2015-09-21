@@ -1,0 +1,19 @@
+{
+  "name": "database_modeling",
+  "version": "1.0.0",
+  "description": "testing with JSON in postgres",
+  "main": "loadData.js",
+  "dependencies": {
+    "casual": "^1.4.7",
+    "knex": "^0.8.6",
+    "lodash": "^3.10.1",
+    "pg": "^4.4.1",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

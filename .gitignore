@@ -1,0 +1,45 @@
+### Node / NPM
+/node_modules/
+npm-debug.log
+
+### Build artifacts
+*.tar.gz
+
+### Sonar
+.sonar
+
+### Istanbul
+/coverage/
+
+### Redis
+dump.rdb
+
+### Sublime Project
+*.sublime-*
+
+### Brackets IDE
+.brackets.json
+
+### Vim
+.lvimrc
+
+### Nscale keys
+keys
+
+### JetBrains Intellij IDE
+.idea/
+*.iml
+
+### Eclipse IDE
+.project
+.settings
+*.tmp
+*.bak
+*.swp
+
+### Mac
+.DS_Store
+
+### Windows
+Thumbs.db
+Desktop.ini
